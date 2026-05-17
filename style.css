@@ -2,239 +2,176 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial,sans-serif;
 }
 
 body{
-
-background:#111;
+background:#0f1115;
 color:white;
-
 }
-
-
 
 header{
-
 display:flex;
-justify-content:space-between;
+gap:10px;
 align-items:center;
-
 padding:15px;
-
-background:black;
-
+background:#161b22;
+position:sticky;
+top:0;
+z-index:99;
 }
 
-
 .logo{
-
 font-size:24px;
 font-weight:bold;
-
 }
 
 .logo span{
-
-color:cyan;
-
+color:#00e5ff;
 }
-
 
 input{
-
-padding:10px;
-
-width:50%;
-
-border:none;
-
-border-radius:20px;
-
-}
-
-
-#darkBtn{
-
-padding:10px;
-border:none;
-border-radius:50%;
-
-}
-
-.apk-card{
-background:#1d1d1d;
-padding:15px;
-border-radius:14px;
-}
-
-.download,
-.btn a{
-
-display:block;
-text-align:center;
-
+flex:1;
 padding:12px;
-
-background:cyan;
-
-color:black;
-
-font-weight:bold;
-
-border-radius:8px;
-
-text-decoration:none;
-
-margin-top:10px;
-}
-
-
-.slider{
-
-display:flex;
-overflow:auto;
-
-gap:10px;
-
-padding:15px;
-
-}
-
-
-.slide{
-
-min-width:250px;
-
-background:cyan;
-
-padding:30px;
-
-border-radius:12px;
-
-font-weight:bold;
-
-color:black;
-
-}
-
-
-
-.kategori{
-
-display:flex;
-
-gap:10px;
-
-padding:10px;
-
-overflow:auto;
-
-}
-
-
-.kategori button{
-
-padding:10px;
-
 border:none;
-
-border-radius:20px;
-
+border-radius:25px;
 background:#222;
 color:white;
-
 }
 
+#darkBtn{
+background:#222;
+border:none;
+color:white;
+padding:10px;
+border-radius:50%;
+}
 
+.slider{
+display:flex;
+overflow:auto;
+gap:12px;
+padding:15px;
+}
+
+.slide{
+min-width:280px;
+height:120px;
+
+background:
+linear-gradient(
+135deg,
+#00e5ff,
+#00b8d4
+);
+
+border-radius:18px;
+
+padding:20px;
+
+font-size:22px;
+font-weight:bold;
+}
+
+.kategori{
+display:flex;
+gap:8px;
+padding:0 15px 20px;
+overflow:auto;
+}
+
+.kategori button{
+padding:10px 16px;
+border:none;
+border-radius:20px;
+background:#1f2937;
+color:white;
+}
 
 .apk-container{
 
 display:grid;
 
 grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
+repeat(auto-fit,minmax(180px,1fr));
 
-gap:20px;
+gap:15px;
 
-padding:20px;
-
+padding:15px;
 }
 
 
 
 .apk-card{
 
-background:#1d1d1d;
+background:#161b22;
 
-padding:15px;
+border-radius:18px;
 
-border-radius:14px;
+overflow:hidden;
 
+transition:.2s;
 }
+
+.apk-card:hover{
+transform:translateY(-4px);
+}
+
 
 
 .apk-card img{
 
 width:100%;
-border-radius:10px;
+height:160px;
 
+object-fit:cover;
 }
 
 
 
-.apk-card h3{
+.info{
 
-margin:10px 0;
-
+padding:14px;
 }
 
-
-
-details{
-
-margin:10px 0;
-
+.info h3{
+margin-bottom:8px;
+font-size:20px;
 }
 
+.rating{
+color:gold;
+margin-bottom:6px;
+}
 
+.downloads{
+color:#aaa;
+font-size:14px;
+}
 
 .btn{
 
-display:flex;
-gap:10px;
+display:block;
 
-}
-
-
-
-.btn a{
-
-flex:1;
+margin-top:15px;
 
 text-align:center;
 
-padding:10px;
+padding:12px;
 
-background:cyan;
-
-text-decoration:none;
+background:#00e5ff;
 
 color:black;
 
-border-radius:8px;
-
 font-weight:bold;
 
+border-radius:10px;
+
+text-decoration:none;
 }
 
-
 footer{
-
-padding:20px;
-
+padding:30px;
 text-align:center;
-
-color:#aaa;
-
-       }
+color:#666;
+}
